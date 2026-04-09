@@ -1,7 +1,6 @@
 import asyncio
 import os
 import random
-
 import websockets
 import json
 import base64
@@ -127,7 +126,7 @@ async def main():
             "mfo": mfo,
             "is_main": is_main
         }
- 
+
         # Эндпоинт добавления счета (уточните в Swagger)
         add_account_url = f"{BASE_URL}/common/company/add-bank-account"
 
@@ -139,7 +138,3 @@ async def main():
 
         print(f"Статус ответа: {final_res.status_code}")
         print(f"Тело ответа: {final_res.text}")
-
-
-if __name__ == "__main__":
-    asyncio.run(main())
