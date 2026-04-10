@@ -57,7 +57,7 @@ async def sign_with_eimzo(challenge_text: str, pin_code: str = "1"):
         }))
 
         # Ожидание и ввод пароля
-        await asyncio.sleep(1.5)
+        await asyncio.sleep(0.5)
         pyautogui.write(pin_code)
         pyautogui.press('enter')
 
